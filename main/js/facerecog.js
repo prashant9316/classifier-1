@@ -15,20 +15,18 @@ async function predict(){
         const output = tf.tidy(() => {
             const img = webcam.capture();
             const prediction =  model.predict(img);
-            return prediction;
+            return prediction.as1D().argMax();
         });
-        classId = await output;
+        classId = (await output.data())[0];
         console.log(classId);
-        console.log("output: "+ output);
-        if(classId >= 0.5){
+        if(classId ==1){
             predictionText = "I see a Dog";
         }
-        else if(classId<0.5){
+        else if(classId == 0){
             predictionText = "I see a Cat";
         }
-        else{
-            console.log("output: "+ output);
-            predictionText = output;
+        else if(classId == 2){
+            predictionText = "No Cat or Dog";
         }
         document.getElementById("prediction").innerText = predictionText;
         
@@ -43,19 +41,17 @@ async function getPrediction(img){
         return prediction.as1D().argMax();
     })
     const classId = (await output.data())[0];
-    var predText = " ";
     console.log(classId);
-        if(classId >= 0.5){
+        if(classId == 1){
             predictionText = "I see a Dog";
         }
-        else if(classId<0.5){
+        else if(classId == 0){
             predictionText = "I see a Cat";
         }
-        else{
-            console.log("output: "+ output)
-            predictionText = "Invalid";
+        else if(classId==2){
+            predictionText = "No Cat or Dog";
         }
-    document.getElementById("pred").innerText = predText;
+    document.getElementById("pred").innerText = predictionText;
     output.dispose();
 }
 
