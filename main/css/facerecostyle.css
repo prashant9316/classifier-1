@@ -1,0 +1,129 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial', sans-serif;
+    font-weight: 200; 
+    font-size: 25px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+header {
+    text-align: right;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/Facial-Recognition-For-Good_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: scroll;
+    isolation: isolate;
+}
+
+header h1{
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;   
+    text-decoration-line: underline;
+    color: aliceblue;
+    margin-right: 50px
+    
+}
+
+
+
+/*SECTION*/
+
+.capture{
+    margin-bottom: 0px
+}
+
+.capture .video-wrap, .capture canvas{
+    isolation: isolate;
+}
+
+
+
+.folder input{
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.folder{
+    color: black;
+    margin-top: 0px
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    isolation: isolate;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.social-links li a:visited,
+.footer-nav li a:visited,
+.social-links li a:link {
+    text-decoration: none;
+    border: 0;
+    color: white;
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #bf6516;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+
+.footer ion-icon:hover
+{
+    color: aqua
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px; 
+    font-weight: 300
+}

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial', sans-serif;
+    font-weight: 200; 
+    font-size: 25px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    isolation: isolate;
+}
+
+.main-heading{
+    text-align: right;
+    padding-right: 20px;
+}
+
+h1{
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 70px;
+}
+
+h2{
+    font-size: 20px ;
+    color: rgba(224, 127, 127, 0.719);
+}
+
+h3{
+    font-size: 15px;
+    text-align: right;
+    color: rgb(192, 192, 248);
+}
+
+/*------BUTTONS--------*/
+
+.btn{
+    margin-top: 20px
+}
+
+.btn:link,
+.btn:visited{
+     display: inline-block;
+     padding: 10px 30px;
+     font-weight: 300;
+     text-decoration: none;
+     border-radius: 200px;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+     background-color: #e67e22;
+     border: 1px solid #e67e22;
+     color: #fff;
+    margin-right: 15px; 
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;  
+    color:  #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #bf6516;
+}
+
+
+.btn-full:hover,
+.btn-full:active{
+     border: 1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #e67e22;  
+    color: white;
+}
+
+/*FEATURES OF WEBSITE*/
+
+.section-feature h2{
+    color: purple;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section-feature h3{
+    color: gray;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.section-feature ion-icon{
+    margin-bottom: -30px
+}
+
+.section-feature img{
+    width:  400px;
+    height: auto;
+}
+
+.section-feature p{
+    margin-top: 70px;
+    color: black;
+    font-weight: 300;
+}
+
+.section-feature .nlp{
+    margin-top: -200px;
+    text-align: left;
+    
+}
+
+.section-feature .natural{
+    margin-top: 30px
+}
+
+.section-feature .natural-img{
+    position: relative;
+    padding-top: 5px;
+    width: 410px;
+    height: 220px;
+    left: 200px
+}
+
+.section-feature .abc{
+    text-align: center;
+    margin-left: -90px;
+}
+
+.section-feature .natural ion-icon{
+    margin-left: 205px
+}
+
+/* footer  */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    isolation: isolate;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.social-links li a:visited,
+.footer-nav li a:visited,
+.social-links li a:link {
+    text-decoration: none;
+    border: 0;
+    color: white;
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #bf6516;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+
+.footer ion-icon:hover
+{
+    color: aqua
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px; 
+    font-weight: 300
+}
+
+
+
