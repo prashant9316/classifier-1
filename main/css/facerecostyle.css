@@ -19,6 +19,62 @@ html,body{
     margin: 0 auto;
 }
 
+/*--- BUTTONS--- */
+
+.btn{
+    margin-top: 5px;
+    margin-right: 40px;
+    padding: 10px;
+    border-radius: 70px
+  
+}
+
+.btn:link,
+.btn:visited{
+     display: inline-block;
+     padding: 10px 30px;
+     font-weight: 300;
+     text-decoration: none;
+     border-radius: 200px;
+     transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+     background-color: #e67e22;
+     border: 1px solid #e67e22;
+     color: #fff;
+    margin-right: 15px; 
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;  
+    color:  #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #bf6516;
+}
+
+
+.btn-full:hover,
+.btn-full:active{
+     border: 1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #e67e22;  
+    color: white;
+}
+
+
+
+
+
+
 /*HEADER*/
 header {
     text-align: right;
@@ -41,16 +97,27 @@ header h1{
     
 }
 
+/* SECTION CLICK-UPLOAD*/
 
-
-/*SECTION*/
-
-.capture{
-    margin-bottom: 0px
+.camera-upload h2{
+    text-align: center;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 40px;
+    margin-top: 0px;
+    
 }
 
-.capture .video-wrap, .capture canvas{
-    isolation: isolate;
+
+.camera {
+    margin-left: 500px
+}
+
+.buttons{
+   margin-left: 170px;
+   margin-bottom: 100px ;
+    margin-top: 40px
 }
 
 
@@ -58,11 +125,21 @@ header h1{
 .folder input{
     height: 40px;
     margin-bottom: 20px;
+    padding: 20px;
+    margin-left: 100px;
+    border: 1px solid black;;
 }
 
 .folder{
-    color: black;
-    margin-top: 0px
+    color: bLack;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.folder h3{
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 /*FOOTER*/
